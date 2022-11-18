@@ -72,10 +72,6 @@ const row2 = new Discord.ActionRowBuilder()
   .setEmoji("💨")
   .setStyle(Discord.ButtonStyle.Secondary)
   .setCustomId("fast"),
-  new Discord.ButtonBuilder()
-  .setLabel("Support Server")
-  .setStyle(Discord.ButtonStyle.Link)
-  .setURL("https://discord.gg/altyapilar")
 )
 await interaction.followUp({embeds: [embed], components: [row, row2]}).then(messages => {
 db.set(`music_${interaction.guild.id}`, { kanal: interaction.channel.id, mesaj: messages.id, muzik: string, user: interaction.user.id, başlık: tracks.title, yükleyen: tracks.author, süre: tracks.duration, görüntülenme: tracks.views, thumb: tracks.thumbnail, video: tracks.url})
