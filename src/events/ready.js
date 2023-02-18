@@ -3,5 +3,5 @@ module.exports = {
 	name: 'ready',
 	once: true,
 	execute(client) {
-  client.user.setActivity("Emuche Müzik /play")
+  client.user.setActivity("klarth Müzik /play")
 }};
